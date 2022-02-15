@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    
+    <div class="container-home">
+      <div class="mobile-menu-container">
+         
+              <a href="index.html" class="current"><i class="fas fa-home"></i></a>
+              <a href="previous%20work.html"><i class="fas fa-project-diagram"></i></a>
+              <a href="contact.html"><i class="fas fa-address-card"></i></a>
+    
+      </div>
+       <nav class="navbar">
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="previous%20work.html">Previous Work</a></li>
+               <li><a href="aboutme.html">About Me</a></li>
+               <li><a href="contact.html">Contact Me</a></li>
+           </ul>
+       </nav>
+        <div class="card">
+            <div class="top">
+                <div class="cirle">
+                    <img src="images/circle-removebg-preview.png" class="picture">
+                </div>
+                <h1>Hi I'm Arron</h1>
+                <h5>A 23 year old self-taught developer</h5>
+                <button type="button" class="info-btn" onclick="move()">Info</button>
+            </div>
+            <div class="bottom" id="bottomHalf">
+                <h1>Summary</h1>
+                <p>I found my passion for development in the middle of 2021 and havent stopped wanting to learn since.</p>
+                <h3>I'm looking for an apprenticeship or entry-level position in either software development or web development with room for progression.</h3>
+                <a><i class="fas fa-chevron-up" onclick="closeInfo()" id="closeBtn"></i></a>
+            </div>
+        </div>
+        <div class="icon-container">
+        <a href="www.linkedin.com/in/arron-macdiarmid-760775226"><i class="fab fa-linkedin"></i></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i></a>
+        <a href="#cont2"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </div>
+    
+    <div class="container-2" >
+        
+        <a id="cont2"><h1>Relevent Skills & Qualifications</h1></a>
+    <div class="skills-container">
+        <div class="skill-tab">
+           <h3>HTML5 & CSS3 - Intermediate</h3>
+            <div class="icon-holder"><i class="fas fa-user-check"></i></div>
+        </div>
+        <div class="skill-tab">
+           <h3>JavaScript - Beginner</h3>
+            <div class="icon-holder"><i class="fas fa-user-check"></i></div>
+        </div>
+        <div class="skill-tab">
+           <h3>C++ - Beginner</h3>
+            <div class="icon-holder"><i class="fas fa-user-check"></i></div>
+        </div>
+        <div class="skill-tab">
+           <h3>Shopify - Intermediate</h3>
+            <div class="icon-holder"><i class="fas fa-user-check"></i></div>
+        </div>
+        <div class="skill-tab">
+        <h3>WordPress - Beginner</h3>
+        <div class="icon-holder"><i class="fas fa-user-check"></i></div>
+        </div>
+        <div class="skill-tab">
+           <h3>Blender 3D - intermediate</h3>
+            <div class="icon-holder"><i class="fas fa-user-check"></i></div>
+        </div>
+        
+    </div>
+       <div class="skills-container2">
+        
+        <div class="skill-tab-rt">
+           <h3>Responsive Web Development Certification - FreeCodeCamp, 300+ hours</h3>
+            <div class="icon-holder skill-tab-rt-icon"><i class="fas fa-user-check" ></i></div>
+        </div>
+        <div class="skill-tab-rb">
+           <h3>HTML5, CSS3 <br>and JavaScript Diploma</h3>
+            <div class="icon-holder skill-tab-rb-icon"><i class="fas fa-user-check"></i></div>
+        </div>
+        
+    </div>
+    </div>
+        
+    <!------- landing page ending ------>
+    
+    
+    
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+    function sendEmail(){
+                Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "macdiarmid.arron@gmail.com",
+            Password : "319AC2AAA9951AF4D0B1A21AD65308D8A9B3",
+            To : 'macdiarmid.arron@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Portfolio Message",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+    }
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    <script>
+        /* script for home page card */
+    var bottomHalf = document.getElementById("bottomHalf");
+        
+        function move(){
+            bottomHalf.style.top = "245px";
+        }
+    
+    
+        var bottomHalf = document.getElementById("bottomHalf");
+        function closeInfo(){
+            bottomHalf.style.top = "0px";
+        }
+        /* script for home page card */
+        
+        
+        
+                
+/* script for left previous work card */
+         var productBox = document.getElementById("productBox");
+        var frontImg = document.getElementById("frontImg");
+        var backImg = document.getElementById("backImg");
+        
+        function flipRight(){
+            productBox.style.transform = "rotateY(180deg)";
+            frontImg.style.left = "650px";
+            backImg.style.left = "20px";
+            frontImg.style.transform = "rotate(-30deg)";
+            backImg.style.transform = "rotate(0deg)";
+        }
+    function flipLeft(){
+            productBox.style.transform = "rotateY(0deg)";
+            frontImg.style.left = "20px";
+            backImg.style.left = "-650px";
+            frontImg.style.transform = "rotate(0deg)";
+            backImg.style.transform = "rotate(-30deg)";
+        }
+        /* script for left previous work card */
+    
+        
+        /* script for middle previous work card */
+         var productBox = document.getElementById("productBox");
+        var frontImg = document.getElementById("frontImg");
+        var backImg = document.getElementById("backImg");
+        
+        function flipRight(){
+            productBox.style.transform = "rotateY(180deg)";
+            frontImg.style.left = "650px";
+            backImg.style.left = "20px";
+            frontImg.style.transform = "rotate(-30deg)";
+            backImg.style.transform = "rotate(0deg)";
+        }
+    function flipLeft(){
+            productBox.style.transform = "rotateY(0deg)";
+            frontImg.style.left = "20px";
+            backImg.style.left = "-650px";
+            frontImg.style.transform = "rotate(0deg)";
+            backImg.style.transform = "rotate(-30deg)";
+        }
+        /* script for middle previous work card */
+        
+        
+        
+        
+        
+        /* script for right previous work card */
+         var productBox = document.getElementById("productBox");
+        var frontImg = document.getElementById("frontImg");
+        var backImg = document.getElementById("backImg");
+        
+        function flipRight(){
+            productBox.style.transform = "rotateY(180deg)";
+            frontImg.style.left = "650px";
+            backImg.style.left = "20px";
+            frontImg.style.transform = "rotate(-30deg)";
+            backImg.style.transform = "rotate(0deg)";
+        }
+    function flipLeft(){
+            productBox.style.transform = "rotateY(0deg)";
+            frontImg.style.left = "20px";
+            backImg.style.left = "-650px";
+            frontImg.style.transform = "rotate(0deg)";
+            backImg.style.transform = "rotate(-30deg)";
+        }
+        /* script for right previous work card */
+    </script>
+    
+</body>
+</html>

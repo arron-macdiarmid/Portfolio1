@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    
+    <div class="container-previous-work">
+      <div class="mobile-menu-container">
+         
+              <a href="index.html"><i class="fas fa-home"></i></a>
+              <a href="previous%20work.html" class="current"><i class="fas fa-project-diagram"></i></a>
+              <a href="contact.html" ><i class="fas fa-address-card"></i></a>
+    
+      </div>
+       <nav class="navbar">
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="previous%20work.html">Previous Work</a></li>
+               <li><a href="aboutme.html">About Me</a></li>
+               <li><a href="contact.html">Contact Me</a></li>
+           </ul>
+       </nav>
+       
+       <div class="grid-container">
+           <div class="con1">
+               <div class="container-card">
+        <div class="product">
+          
+           
+           
+           <img src="" id="frontImg1">
+           <img src="" id="backImg1">
+           
+           
+            <div class="product-inner" id="productBox1">
+                <div class="product-front">
+                    <div class="product-top">
+                        <img src="images/university%20site%20.png">
+                    </div>
+                    <div class="product-bottom">
+                       <h2>This was my first full website</h2>
+                        <p>Now when i say "first" what i mean is the first thing i created that didnt look like it was made with MS Paint.<br>
+                        <br>
+                         Granted some tutorials were followed but the sense of pride and straightening of the learning curve were worth it.</p>
+                        <button type="button">Like</button>
+                        <div class="color-select">
+                            <div class="select-item">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                             <div class="select-item" onclick="flipRight1()">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-back">
+                      <div class="product-top product-top2">
+                        <img src="images/c++%20code%201.png" alt="">
+                    </div>
+                    <div class="product-bottom">
+                        <h2>Calculator app</h2>
+                        <p>This was one of the first C++ apps i made, i used a switch statement with a case for each mathmatical operator.
+                        <br>
+                        <br>
+                         I also included a case to cover the event that the user enters an in-valid mathmatical operation.
+                         <br>
+                         <br>
+                         If that happens, the program just asks you to try again and explain what happened.</p>
+                        <button type="button">Like</button>
+                        <div class="color-select">
+                            <div class="select-item" onclick="flipLeft1()">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                             <div class="select-item">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-side"></div>
+                <div class="right-side"></div>
+            </div>
+        </div>
+    </div>
+           </div>
+           
+           
+           <div class="con2">
+                <div class="container-card">
+        <div class="product">
+           
+           
+           <img src="" id="frontImg2">
+           <img src="" id="backImg2">
+           
+           
+            <div class="product-inner" id="productBox2">
+                <div class="product-front">
+                    <div class="product-top">
+                        <img src="images/ps4%20site.png">
+                    </div>
+                    <div class="product-bottom">
+                        <h2>Just a simple landing <br>page</h2>
+                        <p>As i started to mess around a little more with colours and spacing i was able to create more aestetically pleasing designs.
+                        <br>
+                        <br>
+                        Although i am more of a PC gamer myself i actually like how this one turned out.</p>
+                        <button type="button">Like</button>
+                        <div class="color-select">
+                            <div class="select-item">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                             <div class="select-item" onclick="flipRight2()">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-back">
+                      <div class="product-top product-top2">
+                        <img src="images/c++%20code%202.png">
+                    </div>
+                    <div class="product-bottom">
+                        <h2>Cash machine app</h2>
+                        <p>The app has your standard features you would expect, it asks for a pin, checks that pin against its records and responds accordingly.
+                        <br>
+                        <br>
+                        The app will block the card used after 3 attempts, i implemented a loading feature using the sleep function and its exceptionally polite to you if you have six-figures+.</p>
+                        <button type="button">Like</button>
+                        <div class="color-select">
+                            <div class="select-item" onclick="flipLeft2()">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                             <div class="select-item">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-side"></div>
+                <div class="right-side"></div>
+            </div>
+        </div>
+    </div>
+           </div>
+           
+           
+           <div class="con3">
+                <div class="container-card">
+        <div class="product">
+           
+           
+           <img src="" id="frontImg3">
+           <img src="" id="backImg3">
+           
+           
+            <div class="product-inner" id="productBox3">
+                <div class="product-front">
+                    <div class="product-top">
+                        <video autoplay muted loop src="images/3d%20card%20crop%20largerr.mp4"></video>
+                        <div class="water-mark-cover"></div>
+                    </div>
+                    <div class="product-bottom product-bottom3">
+                        <h2>Spinny card-ception</h2>
+                        <p>Besides the portfolio site you're currently on, this is my most recent project. I don't claim to be amazing at javascript and this was a challenge.<br>
+                        <br>
+                        But damn it was worth it, right? After having so much fun learning how to do this i cant wait for more.</p>
+                        <button type="button">Like</button>
+                        <div class="color-select">
+                            <div class="select-item">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                             <div class="select-item" onclick="flipRight3()">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-back">
+                      <div class="product-top product-top2">
+                        <img src="images/c++%20code%203.png">
+                    </div>
+                    <div class="product-bottom">
+                        <h2>Tic-Tac-Toe game</h2>
+                        <p>It doesn't exactly look pretty but it gets the job done. The app utilises a 3x3 matrix array and a fixed turn-based algorithm to ensure there's no cheating
+                        <br>
+                        <br>
+                        You just enter the number where you want to place your mark, press enter and the number will be replaced with your mark. This continues until the algorithm recognises a draw or win.</p>
+                        <button type="button">Like</button>
+                        <div class="color-select">
+                            <div class="select-item" onclick="flipLeft3()">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                             <div class="select-item">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-side"></div>
+                <div class="right-side"></div>
+            </div>
+        </div>
+    </div>
+           </div>
+           </div>
+          
+           
+           </div>
+           
+           
+           
+           
+       
+    
+    
+    
+    
+    
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+    function sendEmail(){
+                Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "macdiarmid.arron@gmail.com",
+            Password : "319AC2AAA9951AF4D0B1A21AD65308D8A9B3",
+            To : 'macdiarmid.arron@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Portfolio Message",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+    }
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+    /* script for home page card */
+    var bottomHalf = document.getElementById("bottomHalf");
+        
+        function move(){
+            bottomHalf.style.top = "245px";
+        }
+    
+    
+        var bottomHalf = document.getElementById("bottomHalf");
+        function closeInfo(){
+            bottomHalf.style.top = "0px";
+        }
+         var bottomHalf = document.getElementById("bottomHalf");
+        function closeInfo(){
+            bottomHalf.style.top = "0px";
+        }
+        /* script for home page card */
+        
+        
+        
+        
+        
+       /* script for left previous work card */
+         var productBox1 = document.getElementById("productBox1");
+        var frontImg1 = document.getElementById("frontImg1");
+        var backImg1 = document.getElementById("backImg1");
+        
+        function flipRight1(){
+            productBox1.style.transform = "rotateY(180deg)";
+            frontImg1.style.left = "650px";
+            backImg1.style.left = "20px";
+            frontImg1.style.transform = "rotate(-30deg)";
+            backImg1.style.transform = "rotate(0deg)";
+        }
+    function flipLeft1(){
+            productBox1.style.transform = "rotateY(0deg)";
+            frontImg1.style.left = "20px";
+            backImg1.style.left = "-650px";
+            frontImg1.style.transform = "rotate(0deg)";
+            backImg1.style.transform = "rotate(-30deg)";
+        }
+        /* script for left previous work card */
+    
+        
+        /* script for middle previous work card */
+         var productBox2 = document.getElementById("productBox2");
+        var frontImg2 = document.getElementById("frontImg2");
+        var backImg2 = document.getElementById("backImg2");
+        
+        function flipRight2(){
+            productBox2.style.transform = "rotateY(180deg)";
+            frontImg2.style.left = "650px";
+            backImg2.style.left = "20px";
+            frontImg2.style.transform = "rotate(-30deg)";
+            backImg2.style.transform = "rotate(0deg)";
+        }
+    function flipLeft2(){
+            productBox2.style.transform = "rotateY(0deg)";
+            frontImg2.style.left = "20px";
+            backImg2.style.left = "-650px";
+            frontImg2.style.transform = "rotate(0deg)";
+            backImg2.style.transform = "rotate(-30deg)";
+        }
+        /* script for middle previous work card */
+        
+        
+        
+        
+        
+        /* script for right previous work card */
+         var productBox3 = document.getElementById("productBox3");
+        var frontImg3 = document.getElementById("frontImg3");
+        var backImg3 = document.getElementById("backImg3");
+        
+        function flipRight3(){
+            productBox3.style.transform = "rotateY(180deg)";
+            frontImg3.style.left = "650px";
+            backImg3.style.left = "20px";
+            frontImg3.style.transform = "rotate(-30deg)";
+            backImg3.style.transform = "rotate(0deg)";
+        }
+    function flipLeft3(){
+            productBox3.style.transform = "rotateY(0deg)";
+            frontImg3.style.left = "20px";
+            backImg3.style.left = "-650px";
+            frontImg3.style.transform = "rotate(0deg)";
+            backImg3.style.transform = "rotate(-30deg)";
+        }
+        /* script for right previous work card */
+    </script>
+        
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    
+    <div class="container">
+      <div class="mobile-menu-container">
+         
+              <a href="index.html"><i class="fas fa-home"></i></a>
+              <a href="previous%20work.html"><i class="fas fa-project-diagram"></i></a>
+              <a href="contact.html" class="current"><i class="fas fa-address-card"></i></a>
+    
+      </div>
+       <nav class="navbar">
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="previous%20work.html">Previous Work</a></li>
+               <li><a href="aboutme.html">About Me</a></li>
+               <li><a href="contact.html">Contact Me</a></li>
+           </ul>
+       </nav>
+       <div class="form-container">
+          <h1 class="contact-title">Think we could work together? Or maybe you've got some good advice or pointers?
+          <br>
+          Get in touch!</h1>
+          
+           <form action="https://formsubmit.co/macdiarmid.arron@gmail.com" method="POST" class="contact-form">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+               <input type="text" id="fname" name="firstname" placeholder="First Name">
+               <input type="text" id="lname" name="lastname" placeholder="Last Name">
+               <input type="email" id="email" name="email" placeholder="Email">
+               <input type="tel" id="phone" name="phone" placeholder=" Phone: Only if you want to">
+               <textarea name="message" id="comment-box" rows="4" placeholder="Comment"></textarea>
+               <button type="submit" class="send-btn"><i class="fas fa-paper-plane"></i>Send</button>
+           </form>
+           <div class="contact-icons-holder">
+              
+               <div class="contact-icons"><i class="fas fa-map-marker-alt"></i></div>
+               <h1>Guildford, Surrey, UK.</h1>
+               
+           <div class="contact-icons"><i class="fas fa-mobile-alt"></i></div>
+           <h1>07480266620</h1>
+           <div class="contact-icons"><i class="fas fa-inbox"></i></div>
+           <h1>macdiarmid.arron@gmail.com</h1>
+           </div>
+           
+           
+        </div>
+           
+       </div>
+    <!------- landing page ending ------>
+    
+    
+    
+    
+    
+    
+    
+    
+    <!----- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+    function sendEmail(){
+                Email.send({
+            Host : "smtp.gmail.com",
+            SecureToken: "a34fd744-2dd2-49e4-b770-d4727ea85749",
+            To : 'macdiarmid.arron@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Portfolio Message",
+            Body : "And this is the body"
+        }).then(
+          message => alert("message sent")
+        );
+    }
+    </script> ----->
+    
+    
+    <script>
+    
+        /* script for home page card */
+    var bottomHalf = document.getElementById("bottomHalf");
+        
+        function move(){
+            bottomHalf.style.top = "245px";
+        }
+    
+    
+        var bottomHalf = document.getElementById("bottomHalf");
+        function closeInfo(){
+            bottomHalf.style.top = "0px";
+        }
+        /* script for home page card */
+        
+        
+        
+                
+/* script for left previous work card */
+         var productBox = document.getElementById("productBox");
+        var frontImg = document.getElementById("frontImg");
+        var backImg = document.getElementById("backImg");
+        
+        function flipRight(){
+            productBox.style.transform = "rotateY(180deg)";
+            frontImg.style.left = "650px";
+            backImg.style.left = "20px";
+            frontImg.style.transform = "rotate(-30deg)";
+            backImg.style.transform = "rotate(0deg)";
+        }
+    function flipLeft(){
+            productBox.style.transform = "rotateY(0deg)";
+            frontImg.style.left = "20px";
+            backImg.style.left = "-650px";
+            frontImg.style.transform = "rotate(0deg)";
+            backImg.style.transform = "rotate(-30deg)";
+        }
+        /* script for left previous work card */
+    
+        
+        /* script for middle previous work card */
+         var productBox = document.getElementById("productBox");
+        var frontImg = document.getElementById("frontImg");
+        var backImg = document.getElementById("backImg");
+        
+        function flipRight(){
+            productBox.style.transform = "rotateY(180deg)";
+            frontImg.style.left = "650px";
+            backImg.style.left = "20px";
+            frontImg.style.transform = "rotate(-30deg)";
+            backImg.style.transform = "rotate(0deg)";
+        }
+    function flipLeft(){
+            productBox.style.transform = "rotateY(0deg)";
+            frontImg.style.left = "20px";
+            backImg.style.left = "-650px";
+            frontImg.style.transform = "rotate(0deg)";
+            backImg.style.transform = "rotate(-30deg)";
+        }
+        /* script for middle previous work card */
+        
+        
+        
+        
+        
+        /* script for right previous work card */
+         var productBox = document.getElementById("productBox");
+        var frontImg = document.getElementById("frontImg");
+        var backImg = document.getElementById("backImg");
+        
+        function flipRight(){
+            productBox.style.transform = "rotateY(180deg)";
+            frontImg.style.left = "650px";
+            backImg.style.left = "20px";
+            frontImg.style.transform = "rotate(-30deg)";
+            backImg.style.transform = "rotate(0deg)";
+        }
+    function flipLeft(){
+            productBox.style.transform = "rotateY(0deg)";
+            frontImg.style.left = "20px";
+            backImg.style.left = "-650px";
+            frontImg.style.transform = "rotate(0deg)";
+            backImg.style.transform = "rotate(-30deg)";
+        }
+        /* script for right previous work card */
+    </script>
+    
+</body>
+</html>
